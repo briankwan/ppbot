@@ -14,15 +14,24 @@ app.listen(port, function () {
   console.log('Listening on port ' + port);
 });
 
-app.post('/hello', function (req, res, next) {
+//app.post('/hello', function (req, res, next) {
+//  var userName = req.body.user_name;
+//  var botPayload = {
+//    text : 'Hello ' + userName + '! Sup.'
+//  };
+
+module.exports = function (req, res, next) {
   var userName = req.body.user_name;
   var botPayload = {
-    text : 'Hello ' + userName + '! I am a robot'
+    text : 'Hello, ' + userName + '! Huy sucks!'
   };
+
   // Loop otherwise..
   if (userName !== 'slackbot') {
     return res.status(200).json(botPayload);
   } else {
     return res.status(200).end();
   }
-});
+}
+
+app.post('/hello', module.exports);
