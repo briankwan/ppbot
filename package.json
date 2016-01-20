@@ -6,8 +6,8 @@
   "author": "Brian Wan",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.x.x",
     "body-parser": "^1.x.x",
+    "express": "^4.13.3",
     "request": "2.56.x"
   }
 }

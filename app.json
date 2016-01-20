@@ -1,0 +1,6 @@
+{
+    "name": "ppbot",
+    "description": "push/pull notification bot"
+    "repository": "https://github.com/briankwan/ppbot",
+    "keywords": ["ppbot"]
+}
