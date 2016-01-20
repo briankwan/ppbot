@@ -27,11 +27,11 @@ module.exports = function (req, res, next) {
   };
 
   // Loop otherwise..
-  if (userName !== 'slackbot') {
+ // if (userName !== 'slackbot') {
     return res.status(200).json(botPayload);
-  } else {
-    return res.status(200).end();
-  }
+ // } else {
+ //   return res.status(200).end();
+ // }
 }
 
 app.post('/hello', module.exports);
