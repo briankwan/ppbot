@@ -105,9 +105,11 @@ function callRequest(req, res, callback){
 
 	console.log('hello im here');
 
+	var pushed = null;
+
 	var getResult1 = getResult(function(result){
 		console.log('lastPushed');
-		lastPushed = result;
+		pushed = result;
 		console.log(lastPushed);
 		console.log('alskdjf;laksjfd');
 		if(lastPushed == null){
@@ -116,13 +118,13 @@ function callRequest(req, res, callback){
 
 		setInterval(function(){
 			console.log('every 10 sec');
-			console.log('lastPushed: ' + lastPushed);
+			console.log('pushed: ' + pushed);
 			getResult(function(result1){
 				latest = result1;
 				console.log('latest: ' + latest);
-				if(latest !== lastPushed){
+				if(latest !== pushed){
 					postRequest(latest);
-					latest = lastPushed;
+					latest = pushed;
 				}
 			}
 		)}, 10000);
