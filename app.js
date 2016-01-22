@@ -43,9 +43,9 @@ app.post('/hello', module.exports);
 
 function postRequest(text, req, res, callback){
 	var	payload = {
-		"channel": "#general", 
+		"channel": "#testingarea", 
 		"username": "ppbot", 
-		"text": "A change has been made at " + text + ". Also Huy sucks!", 
+		"text": "A push change in the master branch has been made at " + text + ". Also Huy sucks!", 
 		"icon_emoji": ":ghost:"
 	};
 
@@ -53,7 +53,8 @@ function postRequest(text, req, res, callback){
 		method: 'POST', 
 		body: payload, 
 		json: true, 
-		url:'https://hooks.slack.com/services/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'
+		url: 'https://hooks.slack.com/services/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'
+		//url:'https://hooks.slack.com/services/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'
 	};
 
 	request(options, function (err, res, body) {})
@@ -83,35 +84,13 @@ function getResult(callback){
 	return lastPushed;
 }
 
-function loop(lastPushed){
-	console.log('loop');
-	console.log(lastPushed);
-	var getResult1 = getResult(function(result){
-		latest = result;
-		if(latest !== lastPushed){
-			lastPushed = latest;
-			postRequest(latest);
-		}
-		else{
-			postRequest('nothing has changed');
-		}
-	})
-}
-
-
-var url = 'https://api.github.com/repos/briankwan/ppbot';
 
 function callRequest(req, res, callback){
-
-	console.log('hello im here');
 
 	var pushed = null;
 
 	var getResult1 = getResult(function(result){
-		console.log('lastPushed');
 		pushed = result;
-		console.log(lastPushed);
-		console.log('alskdjf;laksjfd');
 		if(lastPushed == null){
 			console.log('something went wrong in the get request');
 		}
@@ -128,14 +107,13 @@ function callRequest(req, res, callback){
 				}
 			}
 		)}, 10000);
-
-		console.log('wt');
-
 	});
 
 	//postRequest(getResult);
 
 }
 
-app.get('/testing', callRequest);
+callRequest();
+
+//app.get('/testing', callRequest);
 
