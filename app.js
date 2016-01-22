@@ -45,7 +45,7 @@ function postRequest(text, req, res, callback){
 	var	payload = {
 		"channel": "#testingarea", 
 		"username": "ppbot", 
-		"text": "A push change in the master branch has been made at " + text + ". Also Huy sucks!", 
+		"text": "@here A push change in the master branch has been made at " + text + ". Also Huy sucks!", 
 		"icon_emoji": ":ghost:"
 	};
 
