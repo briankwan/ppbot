@@ -38,6 +38,16 @@ module.exports = function (req, res, next) {
  //   return res.status(200).end();
  // }
 }
+/*
+function huysucks(req, res, next) {
+  var userName = req.body.user_name;
+  var botPayload = {
+    text : 'But ' + userName + 'Huy all know Huy sucks!'
+  };
+    return res.status(200).json(botPayload);
+}
+app.post('/huysucks', huysucks);
+*/
 
 app.post('/hello', module.exports);
 
