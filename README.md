@@ -1,1 +1,107 @@
 ppbot
+
+git add .
+git commit -m ‘’
+git push heroku master
+
+curl -X POST --data-urlencode 'payload={"channel": "#testingarea", "username": "huysucksbot", "text": "yo Huy sucks!", "icon_emoji": ":ghost:"}' https://hooks.slack.com/services/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
+
+curl -X POST --data-urlencode 'payload={"channel": “#random”, "username": "huysucksbot", "text": "yo Huy sucks!", "icon_emoji": ":ghost:"}' https://hooks.slack.com/services/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
+
+
+  "created_at": "2016-01-19T20:10:18Z",
+  "updated_at": "2016-01-20T15:26:13Z",
+  "pushed_at": "2016-01-20T16:42:24Z",
+
+
+
+
+{
+  "id": 49979848,
+  "name": "ppbot",
+  "full_name": "briankwan/ppbot",
+  "owner": {
+    "login": "briankwan",
+    "id": 3953691,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3953691?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/briankwan",
+    "html_url": "https://github.com/briankwan",
+    "followers_url": "https://api.github.com/users/briankwan/followers",
+    "following_url": "https://api.github.com/users/briankwan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/briankwan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/briankwan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/briankwan/subscriptions",
+    "organizations_url": "https://api.github.com/users/briankwan/orgs",
+    "repos_url": "https://api.github.com/users/briankwan/repos",
+    "events_url": "https://api.github.com/users/briankwan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/briankwan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "private": false,
+  "html_url": "https://github.com/briankwan/ppbot",
+  "description": "",
+  "fork": false,
+  "url": "https://api.github.com/repos/briankwan/ppbot",
+  "forks_url": "https://api.github.com/repos/briankwan/ppbot/forks",
+  "keys_url": "https://api.github.com/repos/briankwan/ppbot/keys{/key_id}",
+  "collaborators_url": "https://api.github.com/repos/briankwan/ppbot/collaborators{/collaborator}",
+  "teams_url": "https://api.github.com/repos/briankwan/ppbot/teams",
+  "hooks_url": "https://api.github.com/repos/briankwan/ppbot/hooks",
+  "issue_events_url": "https://api.github.com/repos/briankwan/ppbot/issues/events{/number}",
+  "events_url": "https://api.github.com/repos/briankwan/ppbot/events",
+  "assignees_url": "https://api.github.com/repos/briankwan/ppbot/assignees{/user}",
+  "branches_url": "https://api.github.com/repos/briankwan/ppbot/branches{/branch}",
+  "tags_url": "https://api.github.com/repos/briankwan/ppbot/tags",
+  "blobs_url": "https://api.github.com/repos/briankwan/ppbot/git/blobs{/sha}",
+  "git_tags_url": "https://api.github.com/repos/briankwan/ppbot/git/tags{/sha}",
+  "git_refs_url": "https://api.github.com/repos/briankwan/ppbot/git/refs{/sha}",
+  "trees_url": "https://api.github.com/repos/briankwan/ppbot/git/trees{/sha}",
+  "statuses_url": "https://api.github.com/repos/briankwan/ppbot/statuses/{sha}",
+  "languages_url": "https://api.github.com/repos/briankwan/ppbot/languages",
+  "stargazers_url": "https://api.github.com/repos/briankwan/ppbot/stargazers",
+  "contributors_url": "https://api.github.com/repos/briankwan/ppbot/contributors",
+  "subscribers_url": "https://api.github.com/repos/briankwan/ppbot/subscribers",
+  "subscription_url": "https://api.github.com/repos/briankwan/ppbot/subscription",
+  "commits_url": "https://api.github.com/repos/briankwan/ppbot/commits{/sha}",
+  "git_commits_url": "https://api.github.com/repos/briankwan/ppbot/git/commits{/sha}",
+  "comments_url": "https://api.github.com/repos/briankwan/ppbot/comments{/number}",
+  "issue_comment_url": "https://api.github.com/repos/briankwan/ppbot/issues/comments{/number}",
+  "contents_url": "https://api.github.com/repos/briankwan/ppbot/contents/{+path}",
+  "compare_url": "https://api.github.com/repos/briankwan/ppbot/compare/{base}...{head}",
+  "merges_url": "https://api.github.com/repos/briankwan/ppbot/merges",
+  "archive_url": "https://api.github.com/repos/briankwan/ppbot/{archive_format}{/ref}",
+  "downloads_url": "https://api.github.com/repos/briankwan/ppbot/downloads",
+  "issues_url": "https://api.github.com/repos/briankwan/ppbot/issues{/number}",
+  "pulls_url": "https://api.github.com/repos/briankwan/ppbot/pulls{/number}",
+  "milestones_url": "https://api.github.com/repos/briankwan/ppbot/milestones{/number}",
+  "notifications_url": "https://api.github.com/repos/briankwan/ppbot/notifications{?since,all,participating}",
+  "labels_url": "https://api.github.com/repos/briankwan/ppbot/labels{/name}",
+  "releases_url": "https://api.github.com/repos/briankwan/ppbot/releases{/id}",
+  "created_at": "2016-01-19T20:10:18Z",
+  "updated_at": "2016-01-20T15:26:13Z",
+  "pushed_at": "2016-01-20T19:09:40Z",
+  "git_url": "git://github.com/briankwan/ppbot.git",
+  "ssh_url": "git@github.com:briankwan/ppbot.git",
+  "clone_url": "https://github.com/briankwan/ppbot.git",
+  "svn_url": "https://github.com/briankwan/ppbot",
+  "homepage": null,
+  "size": 1199,
+  "stargazers_count": 0,
+  "watchers_count": 0,
+  "language": "JavaScript",
+  "has_issues": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "forks_count": 0,
+  "mirror_url": null,
+  "open_issues_count": 0,
+  "forks": 0,
+  "open_issues": 0,
+  "watchers": 0,
+  "default_branch": "master",
+  "network_count": 0,
+  "subscribers_count": 1
+}

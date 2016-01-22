@@ -8,6 +8,8 @@
   "dependencies": {
     "body-parser": "^1.x.x",
     "express": "^4.13.3",
+    "jquery": "1.6.1",
+    "node-slackbot": "0.0.6",
     "request": "2.56.x"
   },
   "repository": {
