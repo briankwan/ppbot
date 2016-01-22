@@ -124,7 +124,7 @@ function callRequest(req, res, callback){
 				console.log('latest: ' + latest);
 				if(latest !== pushed){
 					postRequest(latest);
-					latest = pushed;
+					pushed = latest;
 				}
 			}
 		)}, 10000);
