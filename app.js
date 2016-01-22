@@ -116,10 +116,10 @@ function callRequest(req, res, callback){
 
 		setInterval(function(){
 			console.log('every 10 sec');
+			console.log('lastPushed: ' + lastPushed);
 			getResult(function(result1){
 				latest = result1;
 				console.log('latest: ' + latest);
-				console.log('lastPushed: ' + lastPushed);
 				if(latest !== lastPushed){
 					postRequest(latest);
 					latest = lastPushed;
